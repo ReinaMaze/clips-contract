@@ -87,9 +87,13 @@ pub mod mint_metadata_link;
 pub mod mint_metadata_uri;
 
 // ─── Guard / safety ───────────────────────────────────────────────────────────
+pub mod admin_guard;
 pub mod blacklist;
+pub mod caller_guard;
+pub mod composed_guard;
 pub mod frozen_token;
 pub mod operator_approval;
+pub mod ownership_guard;
 pub mod pause_guard;
 pub mod pause_state;
 pub mod token_approval;

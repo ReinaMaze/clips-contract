@@ -29,4 +29,10 @@ pub enum Error {
     MalformedUrl = 24,
     /// Batch mint size exceeds the configured maximum limit.
     BatchLimitExceeded = 45,
+    /// Caller is not an administrator.
+    UnauthorizedAdmin = 46,
+    /// Caller identity is invalid or missing.
+    InvalidCaller = 47,
+    /// Caller does not own the resource being modified.
+    NotTokenOwner = 48,
 }
